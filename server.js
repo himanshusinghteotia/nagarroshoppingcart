@@ -6,4 +6,7 @@ srv.use(express.json())
 srv.use(express.urlencoded({ extended: true }))
 srv.use('/', express.static(path.join(__dirname, 'public')))
 srv.use('/api', require('./routes/api').route)
-srv.listen(2000, () => console.log('Server started at http://localhost:2000'))
+
+const PORT=process.env.PORT || 2000
+
+srv.listen(2000, () => console.log('Server started at ${PORT}'))
