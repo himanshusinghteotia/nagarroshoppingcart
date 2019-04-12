@@ -9,4 +9,4 @@ srv.use('/api', require('./routes/api').route)
 
 const PORT=process.env.PORT || 2000
 
-srv.listen(2000, () => console.log('Server started at ${PORT}'))
+srv.listen(PORT, () => console.log('Server started at ${PORT}'))
