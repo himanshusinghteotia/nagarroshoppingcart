@@ -165,8 +165,9 @@ function appendCart(cart) {
     return $(`<tr>
                  <!--<td><img height="30px"src="/images/${cart.name}.jpg"></td>-->
                  <td class="item-name">${cart.product.name}</td>
-				 <td class="item-number text-center"><button class="sub" id="${cart.Pid}">minus</button>${cart.qty}*${cart.product.price}<button class="add" id="${cart.Pid}">plus</button></td>
+				 <td class="item-number text-center">${cart.qty}*${cart.product.price}</td>
                  <td class="item-price">₹${x}</td>
                 </tr>`
     )
 }
+//<button class="sub" id="${cart.Pid}">minus</button> <button class="add" id="${cart.Pid}">plus</button>
