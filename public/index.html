@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+    <script src="shop.js"></script>
+    <script src="index.js"></script>
+    <title>Product List</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <form id="form1">
+                    <div class="form-group">
+                        <label for="userName">User Name</label>
+                        <input class="form-control" type="text" id="userName" placeholder="Enter User Name">
+                    </div>
+                </form>
+                <button id="logOut" class="btn btn-primary float-right m-3 ">Logout</button>
+                <button id="btnUserAdd" class="btn btn-primary float-right m-3 ">Login</button>
+                <a href="http://localhost:2000/add_products.html" <button class="btn btn-primary float-right m-3 ">Add Product</button></a>
+                <a href="http://localhost:2000/add_venders.html" <button class="btn btn-primary float-right m-3 ">Add Vendor</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <!--<div class="row-12 text-center m-5">
+            <h2 class="col">Product List</h1>
+                <a href="http://localhost:2000/cart.html" <button id="cart" type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top"
+                    title="View Cart">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    </button>
+                </a>
+        </div>-->
+        <a href="http://localhost:2000/cart.html" <button id="cart" type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top"
+            title="View Cart">
+        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        </button>
+    </a>
+        <div class="row m-5" id="product-list">
+        </div>
+    </div>
+</body>
+
+</html>
